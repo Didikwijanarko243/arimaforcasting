@@ -16,7 +16,7 @@ class Differencing
 
     
 
-    function difference($data, $interval = 1)
+    public static function difference($data, $interval = 1)
     {
         $diff = [];
         for ($i = $interval; $i < count($data); $i++) {

@@ -26,6 +26,9 @@ export default {
             'dark2': '#80C4E9',
             'dark3': '#FF7F3E',
             'dark4': '#FFF6E9',
+
+            'red': '#FA4032',
+            'white': '#FEF3E2'
           },
     },
     plugins: [

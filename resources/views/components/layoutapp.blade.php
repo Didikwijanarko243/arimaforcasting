@@ -14,7 +14,7 @@
     <!-- Styles / Scripts -->
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="bg-sage4">
@@ -23,7 +23,7 @@
         <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
             <div class="flex items-center justify-between">
                 <a class="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80 text-sage4"
-                    href="#" aria-label="Brand">
+                    href="{{url('/')}}" aria-label="Brand">
                     Arima-app
                 </a>
                 <div class="sm:hidden">
@@ -67,7 +67,7 @@
     </header>
     {{ $slot }}
 
-    
+    @stack('script')
 </body>
 
 </html>
